@@ -1,0 +1,223 @@
+
+   
+    
+   
+        <div class="button">
+            <div class="top-bar"></div>
+            <div class="bot-bar"></div>
+            <div class="left-bar"></div>
+            <div class="right-bar"></div>
+            <img  class=img1 src="assets/img1.png">
+            <img  class=img3 src="assets/img4.png">
+            
+            <img class=name src="assets/title.jpg">
+            <img  class=img4 src="assets/img5.png">
+            <img  class=img5 src="assets/img2.jpg">
+        </div>
+        <mat-tab-group>
+            <mat-tab label="Play examples"> 
+           
+         
+
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+       <div class=div1>
+            <button (click)="escojer('atiskettasket')" mat-button class="btn">
+                <img class="alo" src="assets/imagenes/atiskettasket.png">
+                <h1 class=titulo >A tiksket tasket</h1>
+            </button>
+        </div>
+        
+        <div class=div2>
+            <button (click)="escojer('auralee')" mat-button class="btn">
+                <img class="alo" src="assets/imagenes/auralee.png">
+                <h1 class=titulo >Auralee</h1>
+            </button>
+        </div>
+        <div class=div3>
+            <button (click)="escojer('debajodeunboton')"mat-button class="btn">
+                <img class="alo" src="assets/imagenes/debajodeunboton.png">
+                <h1 class=titulo >Debajo de un botón</h1>
+            </button>
+        </div>
+        </div>
+		<div class="nav">
+			<label for="img-4" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+            <div class=div1>
+                <button (click)="escojer('elburroyelcucu')" mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/elburroyelcucu.png">
+                    <h1 class=titulo >El burro y el cucu</h1>
+                </button>
+            </div>
+            
+            <div class=div2>
+                <button (click)="escojer('estrellita')"mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/estrellita.png">
+                    <h1 class=titulo >Estrellita</h1>
+                </button>
+            </div>
+            <div class=div3>
+                <button (click)="escojer('himnoalegria')"mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/himnoalegria.png">
+                    <h1 class=titulo >Himno de la alegria</h1>
+                </button>
+            </div>
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+            <div class=div1>
+                <button (click)="escojer('jinglebells')"mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/jinglebells.png">
+                    <h1 class=titulo >Jingle bells</h1>
+                </button>
+            </div>
+            
+            <div class=div2>
+                <button (click)="escojer('loscolores')"mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/loscolores.png">
+                    <h1 class=titulo >Los colores</h1>
+                </button>
+            </div>
+            <div class=div3>
+                <button (click)="escojer('lospollitos')"mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/lospollitos.png">
+                    <h1 class=titulo >Los pollitos</h1>
+                </button>
+            </div>
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-4" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+            <div class=div1>
+                <button (click)="escojer('marytieneuncarnerin')"mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/marytieneuncarnerin.png">
+                    <h1 class=titulo >Mary tiene un carnerin</h1>
+                </button>
+            </div>
+            
+            <div class=div2>
+                <button (click)="escojer('tongotongo')"mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/tongotongo.png">
+                    <h1 class=titulo >Tongo tongo</h1>
+                </button>
+            </div>
+            <div class=div3>
+                <button (click)="escojer('atiskettasket')"mat-button class="btn">
+                    <img class="alo" src="assets/imagenes/atiskettasket.png">
+                    <h1 class=titulo >A tisket tasket</h1>
+                </button>
+            </div>
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-1" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+    </li>
+</ul>
+
+<mat-card *ngIf="choose"class=cardd>
+   
+  
+    <button class="btnplay" *ngIf="!play" (click)="darplay()"mat-fab>
+        <mat-icon class="iconplay">play_arrow</mat-icon>
+      </button>
+      <button class="btnplay" *ngIf="play" (click)="darpause()"mat-fab>
+        <mat-icon class="iconplay">pause</mat-icon>
+      </button>
+      
+</mat-card>
+<br>
+<div>
+<img class=partituras  src="{{ruta}}">
+</div>
+
+<img   class=chooseas *ngIf=!choose src="assets/choose.jpg">
+</mat-tab>
+
+<mat-tab color="black" label="Project"> 
+
+
+
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+
+           <mat-card class=card2>
+
+               <img  class=cardimg src="assets/1.png">
+            </mat-card>
+            
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card class=card2>
+
+                <img  class=cardimg src="assets/2.png">
+             </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card class=card2>
+
+                <img  class=cardimg src="assets/3.png">
+             </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card class=card2>
+
+                <img  class=cardimg src="assets/4.png">
+             </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card class=card2>
+
+                <img  class=cardimg src="assets/5.png">
+             </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card class=card2>
+
+                <img  class=cardimg2 src="assets/6.png">
+                
+        
+  
+    <button class="btnplay2" *ngIf="!play2" (click)="darplayhimno()"mat-fab>
+        <mat-icon class="iconplay">play_arrow</mat-icon>
+      </button>
+      <button class="btnplay2" *ngIf="play2" (click)="darpausehimno()"mat-fab>
+        <mat-icon class="iconplay">pause</mat-icon>
+      </button>
+    
+             </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+</mat-tab>
+</mat-tab-group>

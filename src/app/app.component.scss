@@ -1,0 +1,345 @@
+
+.partituras{
+    width: 1000px;
+    border: 1px solid black;
+    margin-left:50%;
+    transform: translate(-50%);
+}
+.btnplay2{
+  background-color: pink;
+  margin-left: 45%;
+}
+.cardimg{
+  width:640px;
+}
+.cardimg2{
+  width:640px;
+}
+.card2{
+  background-color: white;
+}
+.chooseas{
+  width:600px;
+  margin-left:50%;
+    transform: translate(-50%);
+}
+.img1{
+
+  width: 70px;
+  margin-top:10px;
+  position: absolute;
+  margin-left:80px;
+  animation: rubberBand 2s infinite;
+}
+.img3{
+
+  width: 100px;
+  margin-top:10px;
+  position: absolute;
+  margin-left:200px;
+  animation: jello 2s infinite;
+}
+.img4{
+
+  width: 90px;
+  margin-top:20px;
+  position: absolute;
+  margin-left:0px;
+  animation: bounce 2s infinite;
+}
+.img5{
+
+  width: 70px;
+  margin-top:10px;
+  position: absolute;
+  margin-left:-170px;
+  animation: shakeX 2s infinite;
+}
+.cardd{
+    height: 58px;
+    width: 58px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    background:rgb(255, 255, 255);
+}
+
+.iconplay{
+    color:rgb(255, 255, 255);
+}
+.btnplay{
+    
+    background-color:rgb(146, 208, 255);
+}
+
+.header{
+    background: rgb(255, 255, 255);
+    height: 160px;
+}
+.name{
+    
+    height: 90%;
+margin-top:10px;
+   margin-left: 50%;
+   transform: translateX(-50%);
+  
+  
+}
+.btn{
+    width: 250px;
+    margin-top:15px;
+  
+}
+.alo{
+    width:250px;
+    border: 1px solid black;
+    left:50%;
+    margin-left:-17px;
+    background: hsl(0, 0%, 0%);
+    opacity: 0.2;
+}
+
+.titulo{
+    margin-top: -120px;
+    left:50%;
+    transform: translate(-50%);
+    position: absolute;
+    
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family:'Comic Sans MS'
+
+}
+
+.div1{
+    position: absolute;
+    left:0;
+}
+.div2{
+    position: absolute;
+    left: 22%;
+}
+.div3{
+    position: absolute;
+    left:44%;
+   
+}
+.div1:hover{
+    animation: pulse 1s;}
+    .div2:hover{
+        animation: pulse 1s;}
+        .div3:hover{
+            animation: pulse 1s;}
+
+html, body { background: #333 url("https://codepen.io/images/classy_fabric.png"); }
+
+.slides {
+    background-color: rgb(221, 253, 221);
+    padding: 0;
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    left: 20%;
+    width: 100%;
+    height: 160px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+
+
+.nav label {
+    width: 100px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 250px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right:0; }
+.nav .prev {
+    left:0}
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+  
+  
+ 
+  
+  @keyframes one{
+    0%{
+      top:0px;
+    }
+    100%{
+      top:-300vh;
+    }
+  }
+  
+  
+  
+  .button{
+    height:23%;
+    width:100%;
+    background:rgb(255, 255, 255);
+    margin:auto auto;
+    position:relative;
+    
+  
+   
+   
+    cursor:pointer;
+    transition:all .3s ease-in 1.2s;
+  }
+  
+  .button:hover{
+    background:rgb(255, 255, 255);
+    color:rgb(180, 180, 180);
+    transition:all .3s ease-in;
+  }
+  
+  .bot-bar{
+    position:absolute;
+    bottom:0px;
+    height:4px; 
+    width:0%;
+    left:0px;
+    background:rgb(197, 255, 163);
+    transition:all .4s ease .8s;
+  }
+  
+  .top-bar{
+    height:4px;
+    width:0%;
+    position:absolute;
+    top:0px;
+    right:0px;
+    background:rgb(147, 142, 255);
+    transition: all .4s ease .2s;
+  }
+  
+  .left-bar{
+    height:0%;
+    width:4px;
+    background:rgb(255, 99, 99);
+    position:absolute;
+    left:0px;
+    top:0px;
+    transition:all .2s ease;
+  }
+  
+  .right-bar{
+    height:0%;
+    width:4px;
+    background:rgb(146, 230, 255);
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    transition:all .2s ease .6s;
+  }
+  
+  .button:hover .bot-bar{
+    width:100%;
+    transition: all .4s ease-in-out;
+  }
+  
+  .button:hover .top-bar{
+    width:100%;
+    transition: all .4s ease-in-out .6s;
+  }
+  
+  .button:hover .right-bar{
+    height:100%;
+    transition:all .2s ease-in-out .4s;
+  }
+  
+  .button:hover .left-bar{
+    height:100%;
+    transition:all .2s ease-in-out 1s;
+  }
+  
+  
